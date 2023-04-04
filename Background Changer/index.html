@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Background Changer</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 20px 100px;
+      }
+      h1 {
+        text-align: center;
+        text-decoration: underline;
+      }
+      img {
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+      }
+      p {
+        font-size: 18px;
+        text-align: justify;
+      }
+      .btn {
+        width: 20px;
+        height: 20px;
+        display: inline-block;
+        border: solid grey 2px;
+        border-radius: 50%;
+        cursor: pointer;
+      }
+      #white {
+        background-color: white;
+      }
+      #aqua {
+        background-color: aquamarine;
+      }
+      #violet {
+        background-color: #ce9aff;
+      }
+      #black {
+        background-color: black;
+      }
+      #color-switcher {
+        text-align: right;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="color-switcher">
+      <span class="btn" id="white" onclick="changeBG('#ffffff')"></span>
+      <span class="btn" id="aqua" onclick="changeBG('#7fffd4')"></span>
+      <span class="btn" id="violet" onclick="changeBG('#ce9aff')"></span>
+      <span class="btn" id="black" onclick="changeBG('#000000')"></span>
+    </div>
+    <h1 class="text">About Us</h1>
+    <img
+      src="https://www.susangreenecopywriter.com/wp-content/uploads/2013/01/iStock_000039291924_Medium.jpg"
+      alt=""
+    />
+    <p class="text">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, facere
+      pariatur reiciendis ad aliquam debitis iure reprehenderit iste nesciunt
+      consequatur quos laborum sequi eius impedit aspernatur dolorum
+      necessitatibus tempore neque quidem voluptatibus optio, nihil cumque eum!
+      Non facilis delectus temporibus molestias ex! Eaque, cum a autem non
+      assumenda quidem explicabo provident amet voluptatem. Id reprehenderit
+      veritatis vel aspernatur amet eos unde ratione, quaerat officia? Unde qui
+      cupiditate dignissimos excepturi alias! Perferendis, quisquam debitis?
+      Aspernatur eveniet assumenda incidunt non praesentium fugit tenetur natus
+      ut repellendus reiciendis sed eligendi sit, nesciunt dolorem voluptatum
+      maiores deleniti itaque temporibus quam in obcaecati fugiat laboriosam
+      consectetur architecto! Ullam quod repellat rerum consequatur sequi
+      deserunt incidunt. Ducimus ipsum necessitatibus exercitationem quia ad
+      culpa, dolorem perferendis accusamus temporibus id eos totam eveniet
+      itaque eligendi aliquam nam magnam ut consequuntur sequi laboriosam
+      quibusdam nesciunt reiciendis animi. Necessitatibus harum cum sequi velit
+      animi, provident eveniet consequatur. Magni accusamus, cumque hic tempora,
+      optio totam officiis necessitatibus, incidunt soluta tempore porro. Odio
+      consequuntur soluta excepturi, tenetur, ducimus facilis doloremque eum at
+      cumque dolores voluptates id officiis repudiandae consectetur quasi porro
+      libero. Ducimus commodi necessitatibus provident ad minima nihil sapiente
+      pariatur, repellendus accusamus at impedit est, voluptate, earum
+      consequatur numquam exercitationem. Distinctio hic maiores laboriosam eos
+      explicabo alias ut quas dolor molestias voluptate. Doloribus magni quis
+      corrupti aspernatur nulla nesciunt, consequatur quo quam delectus eveniet
+      sapiente, minima exercitationem soluta. Velit maxime molestias aspernatur
+      quibusdam sunt veritatis iusto quasi deserunt! Corrupti architecto cumque
+      et totam obcaecati, recusandae sit minima consequuntur ea tenetur quasi,
+      fuga quis quos amet dolores reiciendis impedit. Suscipit aspernatur
+      consequuntur in praesentium animi ipsum magni dolorum officiis delectus
+      et, omnis, quisquam facere veniam impedit sunt nesciunt. Adipisci dicta
+      molestias accusantium in recusandae magnam omnis, doloribus accusamus
+      voluptatibus ab perspiciatis quasi earum inventore voluptate? Quisquam
+      quae non ex atque quia odit assumenda ut fugit sit corporis cupiditate
+      provident facilis quasi nostrum, excepturi dolore aliquam voluptas
+      distinctio corrupti dolorum? Quibusdam at aliquam fuga. Deleniti autem
+      consequuntur iste laborum inventore enim doloremque voluptates repellat,
+      saepe quod quisquam nam ipsam facilis commodi, exercitationem minima!
+      Officiis perferendis aut, rerum, reiciendis ex quis nulla exercitationem
+      voluptas atque rem nihil dolores veniam quo hic voluptatibus tempore
+      consequuntur esse sapiente tenetur inventore vel explicabo? Aperiam
+      architecto doloribus voluptate nam officiis eveniet ad eos. Atque et
+      ratione, sed sapiente harum quisquam quo, ex vero unde aspernatur tenetur
+      impedit cumque a enim at vel tempora suscipit quaerat quibusdam. Eligendi
+      ratione repellendus, unde neque cumque consequatur, pariatur blanditiis,
+      accusamus vero officia nostrum enim voluptatum ab facilis iste aliquid.
+      Nemo natus quia fugit sapiente rerum voluptatibus exercitationem amet
+      molestias unde! Omnis voluptatem soluta eos mollitia aliquid quis repellat
+      iure laudantium minima corrupti fuga odit modi pariatur perferendis,
+      consequatur id laboriosam alias quos harum tempora eligendi exercitationem
+      maiores veritatis? Omnis ex pariatur dicta ipsum iusto labore officia
+      illum non repudiandae corrupti distinctio quasi, hic veniam! Qui illo unde
+      voluptatum esse. Repellat accusantium quibusdam deserunt eius amet quam
+      culpa qui, tempora temporibus corrupti nemo, libero ipsam aperiam iure
+      aut, sunt ipsa nobis ut autem.
+    </p>
+    <script>
+      function changeBG(color){
+          document.body.style.background = color;
+          let txt = document.getElementsByClassName("text")
+          if(color == '#000000'){
+           for(let elm of txt){
+           elm.style.color = "white";
+          }
+      }
+      else{
+          for(let elm of txt){
+           elm.style.color = "black";
+
+      }
+      }
+    }
+    </script>
+  </body>
+</html>
